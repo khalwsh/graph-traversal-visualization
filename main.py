@@ -392,4 +392,4 @@ while True:  # Game main loop
         pygame.display.flip()
     else:
         draw()
-        clock.tick(10)
+        clock.tick(30)
