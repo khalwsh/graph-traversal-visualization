@@ -1,0 +1,14 @@
+ install the required Python packages
+```sh
+pip install pygame
+```
+3.running the program
+```sh
+python3 main.py
+```
+## How to Use
+- Run the script to open the pygame window
+- in the start menu, click on "DFS" or "BFS" to choose the algorithm
+- click on the grid to set the start point(yellow) and the end point (blue)
+- click on the grid to set obstacles(black)
+- press the spacebar to run the chosen algorithm after setting up the above steps

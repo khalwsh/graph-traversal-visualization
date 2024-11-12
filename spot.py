@@ -11,7 +11,8 @@ class Spot:
         self.y = col * width
         self.color = WHITE
         self.width = width
-
+    def equal(self , x):
+        return self.x == x.x and self.y == x.y and self.color == x.color
     def get_pos(self):
         return self.row, self.col
 

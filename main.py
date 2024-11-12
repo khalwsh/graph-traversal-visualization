@@ -104,9 +104,11 @@ def main():
                         if parent:
                             node = Pair(end.row, end.col)
                             while node:
-                                grid[node.first][node.second].make_path()
+                                if not node == Pair(start.row , start.col) and node != Pair(end.row , end.col):
+                                    grid[node.first][node.second].make_path()
+                                pygame.time.delay(30)
                                 node = parent[node.first][node.second]
-                            draw(grid)
+                                draw(grid)
 
                     elif event.key == pygame.K_r:  # Reset grid
                         start = None

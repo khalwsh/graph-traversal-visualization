@@ -11,6 +11,8 @@ class Pair:
     def __init__(self, x, y):
         self.first = x
         self.second = y
+    def __eq__(self, other):
+        return self.first == other.first and self.second == other.second
 
 def valid(x, y, n, m):
     """Check if a given position is within the grid boundaries."""
@@ -46,7 +48,7 @@ def run_bfs(start, end, grid, draw):
                 q.put(Pair(ni, nj))
 
         draw()
-        pygame.time.delay(20)
+        pygame.time.delay(10)
 
     return None
 
@@ -64,7 +66,8 @@ def run_dfs(start, end, grid, draw):
 
         if not vis[row][col]:
             vis[row][col] = True
-            grid[row][col].color = RED
+            if not (row == start.row and col == start.col):
+                grid[row][col].color = RED
             draw()
             pygame.time.delay(20)
 

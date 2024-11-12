@@ -26,13 +26,7 @@ This project visualizes the pathfinding algorithms BFS (Breadth-First Search) an
 
 ### Installation
 
-1. Clone the repository:
-
-```sh
-git clone https://github.com/your-username/pathfinding-visualization.git
-cd pathfinding-visualization
-```
-2. install the required Python packages
+install the required Python packages
 ```sh
 pip install pygame
 ```
@@ -46,10 +40,3 @@ python3 main.py
 - click on the grid to set the start point(yellow) and the end point (blue)
 - click on the grid to set obstacles(black)
 - press the spacebar to run the chosen algorithm after setting up the above steps
-## video
-
-
-
-
-https://github.com/khalwsh/graph-traversal-visualization/assets/136606858/317306d4-eed9-4e78-800b-adac4849ceb1
-
