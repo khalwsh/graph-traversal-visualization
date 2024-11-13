@@ -8,6 +8,7 @@ This project visualizes the pathfinding algorithms BFS (Breadth-First Search) an
 - **Interactive Interface**: Place the start and end points, and obstacles by clicking on the grid.
 - **Two Pathfinding Algorithms**: Choose between BFS and DFS to find the shortest path.
 - **Start Menu**: Simple start menu to choose the algorithm.
+- **Count Paths**: count how many path between the start and end has length equal to the shortest path between them
 
 ## Controls
 
