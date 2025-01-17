@@ -8,6 +8,8 @@ from components.grid import Grid
 from constants.colors import WHITE, BLACK, GREEN, BLUE
 from constants.settings import WIDTH, ROWS
 from utils.helpers import reset_grid
+from algorithms.sp import run_sp
+from utils.helpers import draw_popup
 
 pygame.init()
 
@@ -115,7 +117,10 @@ def main():
                                 pygame.time.delay(30)
                                 node = parent[node[0]][node[1]]
                                 grid.draw(WIN)
-                        done = True
+
+                    number_of_shortest_paths = run_sp(start, end , grid.grid)
+                    draw_popup(str(number_of_shortest_paths) , WIN)
+                    done = True
 
         clock.tick(30)
 
