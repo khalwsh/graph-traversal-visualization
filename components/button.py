@@ -30,13 +30,3 @@ class Button:
             self.color = BUTTON_HOVER_COLOR
         else:
             self.color = BUTTON_COLOR
-
-def dfs_callback():
-    global StartMenu, algo
-    StartMenu = False
-    algo = "dfs"
-
-def bfs_callback():
-    global StartMenu, algo
-    StartMenu = False
-    algo = "bfs"

@@ -1,9 +1,7 @@
-# spot.py
 import pygame
-from colors import WHITE, RED, GREEN, BLACK, YELLOW, BLUE, PURPLE
+from constants.colors import WHITE, RED, GREEN, BLACK, YELLOW, BLUE, PURPLE
 
 class Spot:
-    """Class representing a spot in the grid."""
     def __init__(self, row, col, width):
         self.row = row
         self.col = col
@@ -11,8 +9,7 @@ class Spot:
         self.y = col * width
         self.color = WHITE
         self.width = width
-    def equal(self , x):
-        return self.x == x.x and self.y == x.y and self.color == x.color
+
     def get_pos(self):
         return self.row, self.col
 
