@@ -16,7 +16,7 @@ This project visualizes the pathfinding algorithms BFS (Breadth-First Search) an
   - Place the start point (yellow) and end point (blue).
   - Place obstacles (black) after the start and end points are set.
 - **Right Click**: Remove the start point, end point, or obstacles.
-- **Spacebar**: Run the selected pathfinding algorithm (BFS or DFS).
+- **Spacebar**: Run the selected pathfinding algorithm (BFS or DFS) , return to main menu after the process ends , remove the pop-up page for the shortest path count.
 
 ## Getting Started
 
